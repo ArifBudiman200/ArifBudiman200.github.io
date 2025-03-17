@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
         `).join("");
     });
 });
+      .catch(error => console.error("Error loading books:", error));
+});
 
 function searchBook() {
     let input = document.getElementById("searchBar").value.toLowerCase();
