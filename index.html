@@ -76,30 +76,7 @@
         .book-list { display: flex; flex-wrap: wrap; gap: 20px; padding: 20px; }
         .book { width: 200px; text-align: center; background: white; padding: 10px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
         .book img { width: 100%; height: auto; border-radius: 5px; }
-    </style>
-</head>
-<body>
-    <h2 style="text-align: center;">Daftar Buku</h2>
-    <div class="book-list" id="bookList"></div>
-
-    <script>
-        fetch("https://raw.githubusercontent.com/username/repository-name/branch-name/book_list.json")
-            .then(response => response.json())
-            .then(data => {
-                let bookList = document.getElementById("bookList");
-                let output = "";
-                data.forEach(book => {
-                    output += `
-                        <div class="book">
-                            <img src="${book.gambar}" alt="${book.judul}">
-                            <h3>${book.judul}</h3>
-                            <p>Pengarang: ${book.pengarang}</p>
-                            <p>Kode: ${book.kode}</p>
-                        </div>
-                    `;
-                });
-                bookList.innerHTML = output;
-            })
+    
             .catch(error => console.error("Error mengambil data:", error));
     </script>
 </body>
