@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Akun Perpustakaan</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Daftar Akun Perpustakaan</h2>
+    <form id="signupForm">
+      <label for="username">Nama Pengguna:</label>
+      <input type="text" id="username" name="username" placeholder="Masukkan nama pengguna" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+      
+      <label for="password">Kata Sandi:</label>
+      <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required>
+      
+      <label for="confirmPassword">Konfirmasi Kata Sandi:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Konfirmasi kata sandi" required>
+      
+      <button type="submit">Daftar</button>
+    </form>
+    <div id="message"></div>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>
