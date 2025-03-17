@@ -1,0 +1,9 @@
+perpustakaan/
+├── index.html
+├── style.css
+├── script.js
+├── books.json
+├── img/
+│   ├── pemrograman-web-3.jpg
+│   ├── book2.jpg
+│   └── book3.jpg
