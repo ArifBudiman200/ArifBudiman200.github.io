@@ -4,23 +4,4 @@
     { "title": "Filsafat Modern", "author": "Albert Camus", "cover": "img/book3.jpg" }
 ]
 
-const books = [
-  { title: "Buku Pertama", author: "Penulis A", image: "images/book1.jpg" },
-  { title: "Buku Kedua", author: "Penulis B", image: "images/book2.jpg" },
-  { title: "Buku Ketiga", author: "Penulis C", image: "images/book3.jpg" }
-];
 
-const container = document.getElementById("books-container");
-
-books.forEach(book => {
-  const bookDiv = document.createElement("div");
-  bookDiv.classList.add("book");
-
-  bookDiv.innerHTML = `
-    <img src="${book.image}" alt="${book.title}" width="150">
-    <h3>${book.title}</h3>
-    <p>${book.author}</p>
-  `;
-
-  container.appendChild(bookDiv);
-});
