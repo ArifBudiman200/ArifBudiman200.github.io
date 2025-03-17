@@ -1,0 +1,15 @@
+[
+    {
+        "kode": "BK001",
+        "judul": "Dasar Pemrograman",
+        "pengarang": "John Doe",
+        "gambar": "https://raw.githubusercontent.com/username/repository-name/branch-name/images/book1.jpg"
+    },
+    {
+        "kode": "BK002",
+        "judul": "Belajar Python",
+        "pengarang": "Jane Smith",
+        "gambar": "https://raw.githubusercontent.com/username/repository-name/branch-name/images/book2.jpg"
+    }
+]
+
