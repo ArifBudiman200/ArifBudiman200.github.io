@@ -9,6 +9,33 @@
       <div class="running-text">
   <p>📚 Selamat Datang di Perpustakaan Arif! 📖 Temukan Koleksi Buku Terbaik di Sini!</p>
 </div>
+    .running-text {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  background: #2c3e50;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.running-text p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 
     <header>
