@@ -1,15 +1,20 @@
 [
     {
-        "kode": "BK001",
-        "judul": "Dasar Pemrograman",
-        "pengarang": "John Doe",
-        "gambar": "https://raw.githubusercontent.com/username/repository-name/branch-name/images/book1.jpg"
+        "title": "Menu Navigasi Responsive",
+        "author": "Mengare IT",
+        "year": "2023",
+        "image": "https://raw.githubusercontent.com/ArifBudiman200/ArifBudiman200.github.io/main/images/book1.jpg"
     },
     {
-        "kode": "BK002",
-        "judul": "Belajar Python",
-        "pengarang": "Jane Smith",
-        "gambar": "https://raw.githubusercontent.com/username/repository-name/branch-name/images/book2.jpg"
+        "title": "Desain Menu Navigasi",
+        "author": "Mengare IT",
+        "year": "2023",
+        "image": "https://raw.githubusercontent.com/ArifBudiman200/ArifBudiman200.github.io/main/images/book2.jpg"
+    },
+    {
+        "title": "Online Shop",
+        "author": "Mengare IT",
+        "year": "2023",
+        "image": "https://raw.githubusercontent.com/ArifBudiman200/ArifBudiman200.github.io/main/images/book3.jpg"
     }
 ]
-
