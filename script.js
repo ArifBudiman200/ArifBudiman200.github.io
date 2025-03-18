@@ -1,18 +1,18 @@
 const books = [
     {
-        title: "The 5 Second Rule: Transform your Life, Work, and Confidence with Everyday Courage",
-        image: "https://via.placeholder.com/50",
-        quote: "You often feel tired, not because you've done too much, but because you've done too little of what sparks a light in you. — Anonymous"
+        title: 
+        image:
+        quote:
     },
     {
-        title: "Learning Web Design: A Beginner’s Guide to HTML, CSS, JavaScript, and Web Graphics",
-        image: "https://via.placeholder.com/50",
-        quote: "You often feel tired, not because you've done too much, but because you've done too little of what sparks a light in you. — Anonymous"
+        title: 
+        image: 
+        quote: 
     },
     {
-        title: "Webster's Word Power Better English Grammar. Improve Your Written and Spoken English",
-        image: "https://via.placeholder.com/50",
-        quote: "Everything in the universe is within you. Ask all from yourself. — Rumi"
+        title: 
+        image: 
+        quote:
     }
 ];
 
