@@ -68,16 +68,3 @@ footer {
     padding: 10px;
     margin-top: 20px;
 
-  baca-online {
-    display: block;
-    text-decoration: none;
-    color: white;
-    background: #27ae60;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.baca-online:hover {
-    background: #2ecc71;
-}
