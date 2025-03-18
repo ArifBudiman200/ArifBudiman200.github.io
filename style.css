@@ -68,3 +68,46 @@ footer {
     padding: 10px;
     margin-top: 20px;
 
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.category {
+    padding: 20px;
+}
+
+.category h2 {
+    color: #2c3e50;
+}
+
+.category a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
