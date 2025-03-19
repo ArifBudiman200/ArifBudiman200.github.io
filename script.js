@@ -68,7 +68,7 @@ function showSlide(n) {
     if (n < 0) { slideIndex = slides.length - 1; }
 
     const slider = document.querySelector(".slider");
-    slider.style.transform = translateX(${-slideIndex * 100}%);
+    slider.style.transform = translateX(${-slideIndex * 30}%);
 }
 
 function moveSlide(step) {
