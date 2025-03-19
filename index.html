@@ -225,7 +225,11 @@ alert("Selamat Datang di Perpustakaan Saya!");
 <script src="Script.js"></script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<img id="myImage" src="image.png" alt="Animasi">
+<script>
+  gsap.to("#myImage", {x: 200, duration: 2, repeat: -1, yoyo: true});
+</script>
 
 
 
