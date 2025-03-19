@@ -290,6 +290,57 @@
 
 </html>
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animasi Gelombang</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+        }
+
+        .wave-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .wave {
+            position: absolute;
+            width: 200%;
+            height: 100%;
+            background: url("https://upload.wikimedia.org/wikipedia/commons/6/66/Sine_wave_simple.svg");
+            background-size: cover;
+            opacity: 0.5;
+            animation: waveAnimation 5s infinite linear;
+        }
+
+        .wave:nth-child(2) {
+            opacity: 0.7;
+            animation-duration: 7s;
+        }
+
+        @keyframes waveAnimation {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wave-container">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+</body>
+</html>
 
 
 
