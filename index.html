@@ -290,7 +290,44 @@
 
 </html>
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animasi Background GitHub Pages</title>
 
+    <style>
+        /* Efek animasi background gradient */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #48ff00, #00ffff, #0000ff, #8000ff);
+            background-size: 400% 400%;
+            animation: gradientBG 10s infinite linear;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+ 
 
 
 
