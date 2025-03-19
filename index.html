@@ -295,39 +295,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Animasi Background GitHub Pages</title>
-
+    <title>Bintang Berkelap-Kelip</title>
     <style>
-        /* Efek animasi background gradient */
         body {
+            background: black;
             margin: 0;
-            height: 20vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            color: white;
-            background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #48ff00, #00ffff, #0000ff, #8000ff);
-            background-size: 20% 52%;
-            animation: gradientBG 10s infinite linear;
+            overflow: hidden;
         }
 
-        @keyframes gradientBG {
-            0% { background-position: 20% 20%; }
-            20% { background-position: 200% 20%; }
-            30% { background-position: 20% 20%; }
+        .stars {
+            width: 2px;
+            height: 2px;
+            background: white;
+            position: absolute;
+            animation: twinkle 3s infinite ease-in-out;
         }
 
-        h1 {
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        @keyframes twinkle {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
         }
     </style>
 </head>
 <body>
-
- 
+    <script>
+        function createStars() {
+            for (let i = 0; i < 100; i++) {
+                let star = document.createElement("div");
+                star.className = "stars";
+                star.style.top = Math.random() * window.innerHeight + "px";
+                star.style.left = Math.random() * window.innerWidth + "px";
+                star.style.animationDuration = (Math.random() * 3 + 1) + "s";
+                document.body.appendChild(star);
+            }
+        }
+        createStars();
+    </script>
+</body>
+</html>
 
 
 
