@@ -60,4 +60,22 @@ window.onload = displayBooks;
 
 let index = 0;
 
+let slideIndex = 0;
+
+function showSlide(n) {
+    const slides = document.querySelectorAll(".slide");
+    if (n >= slides.length) { slideIndex = 0; }
+    if (n < 0) { slideIndex = slides.length - 1; }
+
+    const slider = document.querySelector(".slider");
+    slider.style.transform = translateX(${-slideIndex * 100}%);
+}
+
+function moveSlide(step) {
+    slideIndex += step;
+    showSlide(slideIndex);
+}
+
+// Auto-slide setiap 4 detik
+setInterval(() => moveSlide(1), 4000);
 
