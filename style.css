@@ -68,4 +68,52 @@ footer {
     padding: 10px;
     margin-top: 20px;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #00264d;
+    color: white;
+    padding: 20px;
+}
+
+.partner {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.partner-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.partner-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.partner-box h2 {
+    color: #0056b3;
+    margin: 10px 0;
+}
+
+.partner-box p {
+    color: #333;
+}
   
