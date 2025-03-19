@@ -137,8 +137,8 @@ header {
 
 .slider-container {
     position: relative;
-    width: 80%;
-    max-width: 1000px;
+    width: 40%;
+    max-width: 100px;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -151,7 +151,7 @@ header {
 }
 
 .slide {
-    width: 100%;
+    width: 30%;
     display: block;
 }
 
