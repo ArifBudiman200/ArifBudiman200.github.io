@@ -179,3 +179,31 @@ header {
     background: rgba(0, 0, 0, 0.8);
 }
 
+body {
+    margin: 0;
+    height: 100vh;
+    background: #467a4f;
+    overflow: hidden;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #467a4f;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.486);
+  border-radius: 50%;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(0.5); opacity: 1; }
+  100% { transform: translateY(-100vh) scale(1.2); opacity: 0; }
+}
