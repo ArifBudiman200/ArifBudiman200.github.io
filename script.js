@@ -76,3 +76,6 @@ function moveSlide(step) {
 
 // Auto-slide setiap 5 detik
 setInterval(() => moveSlide(1), 4000);
+
+<script src="Script.js"></script>
+
