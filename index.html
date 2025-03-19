@@ -220,7 +220,41 @@
 </body>
 </html>
     
-    
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi Background Bergerak</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(270deg, #ff7eb3, #ff758c, #ff7eb3);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 8s ease infinite;
+        }
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: white; font-family: Arial, sans-serif;">Animasi Background Bergerak</h1>
+</body>
+</html>
+
 
 
 
