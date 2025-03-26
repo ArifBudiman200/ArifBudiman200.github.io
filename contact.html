@@ -28,11 +28,21 @@
             border: none;
             cursor: pointer;
         }
+        .success-message {
+            color: green;
+            margin-top: 20px;
+            display: none;
+        }
+        .error-message {
+            color: red;
+            margin-top: 20px;
+            display: none;
+        }
     </style>
 </head>
 <body>
     <h2>Hubungi Kami</h2>
-    <form action="mailto:arifbudiman3044197256@email.com" method="post" enctype="text/plain">
+    <form id="contactForm">
         <label for="name">Nama:</label>
         <input type="text" id="name" name="name" required>
         
@@ -44,5 +54,74 @@
 
         <button type="submit">Kirim</button>
     </form>
+    
+    <div id="successMessage" class="success-message">
+        Pesan Anda telah berhasil dikirim! Kami akan segera menghubungi Anda.
+    </div>
+    
+    <div id="errorMessage" class="error-message">
+        Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            // Menambahkan event listener untuk form submission
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Mencegah pengiriman form default
+                
+                // Simulasi pengiriman form (dalam aplikasi nyata, ini akan diganti dengan AJAX/fetch)
+                const isSuccess = Math.random() > 0.2; // 80% chance of success for demo
+                
+                if (isSuccess) {
+                    // Tampilkan pesan sukses
+                    successMessage.style.display = 'block';
+                    errorMessage.style.display = 'none';
+                    
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Sembunyikan pesan sukses setelah 5 detik
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                } else {
+                    // Tampilkan pesan error
+                    errorMessage.style.display = 'block';
+                    successMessage.style.display = 'none';
+                    
+                    // Sembunyikan pesan error setelah 5 detik
+                    setTimeout(() => {
+                        errorMessage.style.display = 'none';
+                    }, 5000);
+                }
+            });
+            
+            // Validasi real-time untuk input email
+            const emailInput = document.getElementById('email');
+            emailInput.addEventListener('input', function() {
+                if (!emailInput.checkValidity()) {
+                    emailInput.style.borderColor = 'red';
+                } else {
+                    emailInput.style.borderColor = '';
+                }
+            });
+            
+            // Animasi saat hover button
+            const submitButton = contactForm.querySelector('button');
+            submitButton.addEventListener('mouseover', function() {
+                this.style.opacity = '0.8';
+                this.style.transform = 'scale(1.02)';
+            });
+            
+            submitButton.addEventListener('mouseout', function() {
+                this.style.opacity = '';
+                this.style.transform = '';
+            });
+        });
+    </script>
 </body>
 </html>
