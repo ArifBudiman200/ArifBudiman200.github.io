@@ -125,3 +125,100 @@
     </script>
 </body>
 </html>
+
+<script>
+          // Fungsi untuk validasi form
+          function validateForm() {
+            let isValid = true;
+            
+            // Validasi nama
+            const namaInput = document.getElementById('nama');
+            const namaError = document.getElementById('nama-error');
+            if (namaInput.value.trim() === '') {
+                namaError.textContent = 'Nama harus diisi';
+                namaError.style.display = 'block';
+                namaInput.classList.add('error');
+                isValid = false;
+            } else {
+                namaError.style.display = 'none';
+                namaInput.classList.remove('error');
+            }
+            
+            // Validasi email
+            const emailInput = document.getElementById('email');
+            const emailError = document.getElementById('email-error');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (emailInput.value.trim() === '') {
+                emailError.textContent = 'Email harus diisi';
+                emailError.style.display = 'block';
+                emailInput.classList.add('error');
+                isValid = false;
+            } else if (!emailRegex.test(emailInput.value)) {
+                emailError.textContent = 'Format email tidak valid';
+                emailError.style.display = 'block';
+                emailInput.classList.add('error');
+                isValid = false;
+            } else {
+                emailError.style.display = 'none';
+                emailInput.classList.remove('error');
+            }
+            
+            // Validasi pesan
+            const messageInput = document.getElementById('message');
+            const messageError = document.getElementById('message-error');
+            
+            if (messageInput.value.trim() === '') {
+                messageError.textContent = 'Pesan harus diisi';
+                messageError.style.display = 'block';
+                messageInput.classList.add('error');
+                isValid = false;
+            } else {
+                messageError.style.display = 'none';
+                messageInput.classList.remove('error');
+            }
+            
+            return isValid;
+        }
+        
+        // Fungsi untuk menampilkan pesan sukses
+        function showSuccessMessage() {
+            const contactForm = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            
+            // Sembunyikan form dan tampilkan pesan sukses
+            contactForm.style.display = 'none';
+            successMessage.style.display = 'block';
+            
+            // Reset form setelah 5 detik
+            setTimeout(function() {
+                contactForm.reset();
+                contactForm.style.display = 'block';
+                successMessage.style.display = 'none';
+            }, 5000);
+        }
+        
+        // Fungsi untuk menambahkan validasi real-time
+        function addRealTimeValidation() {
+            // Validasi real-time untuk nama
+            document.getElementById('nama').addEventListener('input', function() {
+                const namaError = document.getElementById('nama-error');
+                namaError.style.display = 'none';
+                this.classList.remove('error');
+            });
+            
+            // Validasi real-time untuk email
+            document.getElementById('email').addEventListener('input', function() {
+                const emailError = document.getElementById('email-error');
+                emailError.style.display = 'none';
+                this.classList.remove('error');
+            });
+            
+            // Validasi real-time untuk pesan
+            document.getElementById('message').addEventListener('input', function() {
+                const messageError = document.getElementById('message-error');
+                messageError.style.display = 'none';
+                this.classList.remove('error');
+            });
+        }
+    </script>
