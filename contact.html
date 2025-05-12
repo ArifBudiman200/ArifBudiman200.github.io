@@ -38,15 +38,73 @@
             margin-top: 20px;
             display: none;
 
+   <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Kontak</title>
+  <style>
+    body {
+      background-image: url('images/1000138033.jpg'); /* Ganti path jika perlu */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      color: white;
+    }
+
+    .contact-box {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #00d1b2;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #00d1b2;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00b19a;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-box">
+    <h2>Hubungi Kami</h2>
     <form action="https://formsubmit.co/arifgg701@gmail.com" method="POST">
-  <input type="text" name="name" placeholder="Nama Anda" required>
-  <input type="email" name="email" placeholder="Email Anda (untuk dibalas)" required>
-  <textarea name="message" placeholder="Tulis pesan Anda di sini" rows="5" required></textarea>
+      <input type="text" name="name" placeholder="Nama Anda" required>
+      <input type="email" name="email" placeholder="Email Anda" required>
+      <textarea name="message" placeholder="Pesan Anda" rows="5" required></textarea>
+      <button type="submit">Kirim Pesan</button>
 
-  <input type="hidden" name="_subject" value="Pesan Baru dari Halaman Kontak">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_next" value="https://arifbudiman200.github.io/contact.html">
-
-  <button type="submit">Kirim Pesan</button>
-</form>
+      <!-- Optional: Redirect setelah kirim -->
+      <input type="hidden" name="_next" value="https://arifbudiman200.github.io/contact.html">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </div>
+</body>
+</html>
