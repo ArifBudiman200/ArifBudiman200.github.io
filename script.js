@@ -92,3 +92,5 @@ document.addEventListener("DOMContentLoaded", function () {
     banner.style.display = "none";
   });
 });
+
+document.cookie = "username=arif; expires=Fri, 31 Dec 2025 23:59:59 UTC; path=/";
