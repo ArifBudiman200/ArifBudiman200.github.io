@@ -1,3 +1,5 @@
+
+
 const books = [
     {
         title: 
@@ -94,3 +96,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.cookie = "username=arif; expires=Fri, 31 Dec 2025 23:59:59 UTC; path=/";
+let asal = document.cookie;
+console.log(asal);
