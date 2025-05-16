@@ -95,6 +95,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.cookie = "username=cookie; expires=Fri, 31 Dec 2025 23:59:59 UTC; path=/";
-let asal = document.cookie;
-console.log(asal);
+function acceptCookies() {
+  localStorage.setItem("cookieAccepted", "true");
+  document.getElementById("cookie-banner").style.display = "none";
+}
+
+function rejectCookies() {
+  localStorage.setItem("cookieAccepted", "false");
+  document.getElementById("cookie-banner").style.display = "none";
+}
+
+// Tampilkan banner hanya jika belum ada pilihan
+window.onload = function () {
+  if (localStorage.getItem("cookieAccepted") === null) {
+    document.getElementById("cookie-banner").style.display = "flex";
+  } else {
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+};
