@@ -19,6 +19,32 @@
       margin: 0;
       padding: 0;
       display: flex;
+     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    nav {
+      background-color: #2c3e50; /* Warna gelap agar teks kontras */
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
     }
 
     nav ul li {
@@ -28,19 +54,34 @@
     nav ul li a {
       color: white;
       text-decoration: none;
-      padding: 10px 15px;
-      border-radius: 8px;
-      transition: 0.3s;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
     }
 
     nav ul li a:hover {
-      background-color: #357ABD; /* Warna hover */
-      color: #FFD700;
+      background-color: #2980b9; /* Biru saat hover */
+      color: #FFD700; /* Warna emas saat hover */
     }
   </style>
 </head>
 <body>
-}
+
+  <nav>
+    <div class="logo">📚 Perpustakaan Arif Budiman</div>
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Koleksi Buku</a></li>
+      <li><a href="#">Tentang Kami</a></li>
+      <li><a href="#">Kontak</a></li>
+      <li><a href="https://github.com/namaproyek" target="_blank">Kode GitHub</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten lainnya di sini -->
+
+</body>
+</html>
              <nav class="navbar">
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
